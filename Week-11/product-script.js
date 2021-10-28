@@ -37,5 +37,8 @@ divProductEle.appendChild(pProductNameEle);
 
 //5. create <p> for productId -> <p>10000</p>
 const pProductPriceEle = document.createElement('p');
-pProductPriceEle.textContent = product.price + 'Baht';
+pProductPriceEle.textContent = product.price + ' Baht';
 divProductEle.appendChild(pProductPriceEle);
+
+//6. add product element to products element
+divProductsEle.appendChild(divProductEle);
